@@ -17,7 +17,7 @@ func _init(cn, cs).(cn,cs):
     _frameEnd   = 11
     random_frame()
     _characterNode.disable_narrow_hitbox(true)
-    _characterNode.play_sound(load("res://grab.mp3"))
+    _characterNode.play_sound(load("res://assets/grab.mp3"))
     lastWindowPos = OS.window_position
 
 
@@ -44,7 +44,7 @@ func _process(dt):
             # Oneshot events
             longHold = true
             _characterNode.stop_sound_loop()
-            _characterNode.start_sound_loop(load("res://grab_2.ogg"))
+            _characterNode.start_sound_loop(load("res://assets/grab_2.ogg"))
             animDelay = 0.07
             sinFrequency = 6
         # Move XPos using sawtooth graph
